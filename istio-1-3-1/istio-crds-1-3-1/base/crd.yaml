@@ -578,11 +578,11 @@ spec:
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
-  name: clusterissuers.certmanager.k8s.io
+  name: clusterissuers.group: cert-manager.io
   labels:
     app: certmanager
 spec:
-  group: certmanager.k8s.io
+  group: cert-manager.io
   versions:
     - name: v1alpha1
       served: true
@@ -595,11 +595,11 @@ spec:
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
-  name: issuers.certmanager.k8s.io
+  name: issuers.group: cert-manager.io
   labels:
     app: certmanager
 spec:
-  group: certmanager.k8s.io
+  group: cert-manager.io
   versions:
     - name: v1alpha1
       served: true
@@ -612,7 +612,7 @@ spec:
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
-  name: certificates.certmanager.k8s.io
+  name: certificates.group: cert-manager.io
   labels:
     app: certmanager
 spec:
@@ -638,7 +638,7 @@ spec:
         Populated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
       name: Age
       type: date
-  group: certmanager.k8s.io
+  group: cert-manager.io
   versions:
     - name: v1alpha1
       served: true
@@ -654,7 +654,7 @@ spec:
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
-  name: orders.certmanager.k8s.io
+  name: orders.group: cert-manager.io
   labels:
     app: certmanager
 spec:
@@ -677,7 +677,7 @@ spec:
         Populated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
       name: Age
       type: date
-  group: certmanager.k8s.io
+  group: cert-manager.io
   versions:
     - name: v1alpha1
       served: true
@@ -690,7 +690,7 @@ spec:
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
-  name: challenges.certmanager.k8s.io
+  name: challenges.group: cert-manager.io
   labels:
     app: certmanager
 spec:
@@ -711,7 +711,7 @@ spec:
         Populated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
       name: Age
       type: date
-  group: certmanager.k8s.io
+  group: cert-manager.io
   versions:
     - name: v1alpha1
       served: true

@@ -4,9 +4,9 @@ metadata:
   labels:
     app: certmanager
     kustomize.component: istio-crds
-  name: clusterissuers.certmanager.k8s.io
+  name: clusterissuers.group: cert-manager.io
 spec:
-  group: certmanager.k8s.io
+  group: group: cert-manager.io
   names:
     kind: ClusterIssuer
     plural: clusterissuers

@@ -4,7 +4,7 @@ metadata:
   labels:
     app: certmanager
     kustomize.component: istio-crds
-  name: challenges.certmanager.k8s.io
+  name: challenges.cert-manager.io
 spec:
   additionalPrinterColumns:
   - JSONPath: .status.state
@@ -23,7 +23,7 @@ spec:
       Populated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
     name: Age
     type: date
-  group: certmanager.k8s.io
+  group: cert-manager.io
   names:
     kind: Challenge
     plural: challenges

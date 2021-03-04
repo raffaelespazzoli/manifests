@@ -8,9 +8,9 @@ metadata:
     chart: certmanager
     heritage: Tiller
     release: istio
-  name: issuers.certmanager.k8s.io
+  name: issuers.group: cert-manager.io
 spec:
-  group: certmanager.k8s.io
+  group: group: cert-manager.io
   names:
     kind: Issuer
     plural: issuers

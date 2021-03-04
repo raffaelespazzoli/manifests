@@ -4,7 +4,7 @@ metadata:
   labels:
     app: certmanager
     kustomize.component: istio-crds
-  name: certificates.certmanager.k8s.io
+  name: certificates.cert-manager.io
 spec:
   additionalPrinterColumns:
   - JSONPath: .status.conditions[?(@.type=="Ready")].status
@@ -28,7 +28,7 @@ spec:
       Populated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
     name: Age
     type: date
-  group: certmanager.k8s.io
+  group: ccert-manager.io
   names:
     kind: Certificate
     plural: certificates

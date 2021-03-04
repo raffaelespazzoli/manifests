@@ -8,7 +8,7 @@ metadata:
     chart: certmanager
     heritage: Tiller
     release: istio
-  name: certificates.certmanager.k8s.io
+  name: certificates.group: cert-manager.io
 spec:
   additionalPrinterColumns:
   - JSONPath: .status.conditions[?(@.type=="Ready")].status
@@ -32,7 +32,7 @@ spec:
       Populated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
     name: Age
     type: date
-  group: certmanager.k8s.io
+  group: group: cert-manager.io
   names:
     kind: Certificate
     plural: certificates

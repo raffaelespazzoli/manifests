@@ -17,7 +17,7 @@ webhooks:
       namespace: default
       path: /apis/webhook.cert-manager.io/v1beta1/validations
   failurePolicy: Fail
-  name: webhook.certmanager.k8s.io
+  name: webhook.cert-manager.io
   rules:
   - apiGroups:
     - cert-manager.io
