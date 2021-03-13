@@ -4862,7 +4862,7 @@ spec:
         - name: RELATED_IMAGE_ENGINE
           value: ''
         - name: RELATED_IMAGE_STORAGE_INITIALIZER
-          value: ''
+          value: 'quay.io/raffaelespazzoli/aws-model-initializer:latest'
         - name: RELATED_IMAGE_SKLEARNSERVER_REST
           value: ''
         - name: RELATED_IMAGE_SKLEARNSERVER_GRPC

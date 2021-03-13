@@ -88,9 +88,10 @@ data:
             ]
         }
     }
+#        "image" : "gcr.io/kfserving/storage-initializer:v0.3.0",    
   storageInitializer: |-
     {
-        "image" : "gcr.io/kfserving/storage-initializer:v0.3.0",
+        "image" : "quay.io/raffaelespazzoli/aws-model-initializer:latest",
         "memoryRequest": "100Mi",
         "memoryLimit": "1Gi",
         "cpuRequest": "100m",
